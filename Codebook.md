@@ -9,16 +9,16 @@ date: "11 December 2017"
 ## Project Description
 The goal is to prepare tidy data that can be used for later analysis.
 
-##Study design and data processing
+## Study design and data processing
 
-###Collection of the raw data
+### Collection of the raw data
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . 
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. 
 
 
-##Creating the tidy datafile
+## Creating the tidy datafile
 
-###Guide to create the tidy data file
+### Guide to create the tidy data file
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 A full description is available at the site where the data was obtained:
 
@@ -29,7 +29,7 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-###Cleaning of the data
+### Cleaning of the data
 The process for getting the tidy data is as followw. Details is explained in README.md
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -39,7 +39,7 @@ The process for getting the tidy data is as followw. Details is explained in REA
 
 The resulting data.frame is saved in tidy_average.txt file
 
-##Description of the variables in  tidy_average.txt
+## Description of the variables in  tidy_average.txt
 
 subject       : int  value: 1 to 30
 activity_label: chr  6 possible values : "LAYING","SITTING", "STANDING","WALKING","WALKING_DOWNSTAIRS","WALKING_UPSTAIRS"
