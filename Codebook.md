@@ -1,4 +1,4 @@
-CodeBook
+Codebook
 ================
 
 Project Description
@@ -30,8 +30,8 @@ The process for getting the tidy data is as followw. Details is explained in REA
 
 The resulting data.frame is saved in tidy\_average.txt file
 
-Description of the variables in the data
-----------------------------------------
+Description of the variables in the tidy data.frame
+---------------------------------------------------
 
 -   subject   
     class: int, value: 1 to 30   
