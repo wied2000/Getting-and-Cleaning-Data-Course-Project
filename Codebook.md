@@ -6,15 +6,10 @@ Project Description
 
 The goal is to prepare tidy data that can be used for later analysis.
 
-Collection of the raw data
+Creating Tidy Data
 --------------------------
 
-One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users.
-
-Creating the tidy datafile
---------------------------
-
-### Guide to create the tidy data file
+### The raw data
 
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 
@@ -26,38 +21,43 @@ Here are the data for the project:
 
 ### Cleaning of the data
 
-The process for getting the tidy data is as followw. Details is explained in README.md 1. Merges the training and the test sets to create one data set. 2. Extracts only the measurements on the mean and standard deviation for each measurement. 3. Uses descriptive activity names to name the activities in the data set 4. Appropriately labels the data set with descriptive variable names. 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+The process for getting the tidy data is as followw. Details is explained in README.md 
+1. Merges the training and the test sets to create one data set. 
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set 
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The resulting data.frame is saved in tidy\_average.txt file
 
-Description of the variables in tidy\_average.txt
--------------------------------------------------
+Description of the variables in the data
+----------------------------------------
 
--   subject
-    class: int, value: 1 to 30
--   activity\_label
-    class: chr, 6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING\_DOWNSTAIRS", "WALKING\_UPSTAIRS"
--   dom
-    class: chr, 3 possible values : "Time", "Freq","-"
--   body\_gravity
-    class: chr, 3 possible values : "Body","Gravity","-"
--   acc\_gyro
-    class: chr, 3 possible values : "Acc","Gyro","-"
--   jerk
-    class: chr, 2 possible values : "Jerk","-"
--   mag
-    class: chr, 2 possible values : "Mag","-"
--   direction
-    class: chr, 4 possible values : "X","Y","Z"
--   stat
-    class: chr, 2 possible values : "Mean","Std"
--   value
-    class: num, average of measurement value (Mean/Std) for each fatures
+-   subject   
+    class: int, value: 1 to 30   
+-   activity\_label    
+    class: chr, 6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING\_DOWNSTAIRS", "WALKING\_UPSTAIRS"   
+-   dom   
+    class: chr, 3 possible values : "Time", "Freq","-"    
+-   body\_gravity   
+    class: chr, 3 possible values : "Body","Gravity","-"    
+-   acc\_gyro   
+    class: chr, 3 possible values : "Acc","Gyro","-"   
+-   jerk   
+    class: chr, 2 possible values : "Jerk","-"   
+-   mag   
+    class: chr, 2 possible values : "Mag","-"   
+-   direction   
+    class: chr, 4 possible values : "X","Y","Z"   
+-   stat   
+    class: chr, 2 possible values : "Mean","Std"   
+-   value   
+    class: num, average of measurement value (Mean/Std) for each fatures   
 
-Structure tidy\_average.txt
+Structure data in tidy\_average.txt 
 ---------------------------
 
-You can include R code in the document as follows:
+File tidy_average.txt is generated from R data.frame called w4tidyave  
 
 ``` r
 source("run_analysis.R")
