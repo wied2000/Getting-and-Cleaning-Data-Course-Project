@@ -46,7 +46,7 @@ to your working directory
 
 ### 4. Appropriately labels the data set with descriptive variable names.
 
-- convert all features column into a column (features) that will be split later
+- convert all features column into ONE column (features) that will be split later
 - create new column for variable dom
 - create new column for variable body_gravity
 - create new column for variable acc_gyro
