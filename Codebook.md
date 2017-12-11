@@ -1,8 +1,8 @@
 
 ---
-title: "Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone"
-author: "WM kartika"
-date: "11 December 2017"
+## title: "Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone"
+## author: "WM kartika"
+## date: "11 December 2017"
 
 ---
 
@@ -41,16 +41,16 @@ The resulting data.frame is saved in tidy_average.txt file
 
 ## Description of the variables in  tidy_average.txt
 
-subject       : int  value: 1 to 30
-activity_label: chr  6 possible values : "LAYING","SITTING", "STANDING","WALKING","WALKING_DOWNSTAIRS","WALKING_UPSTAIRS"
-dom           : chr  3 possible values : "Time","Freq","-"
-body_gravity  : chr  3 possible values : "Body","Gravity","-"
-acc_gyro      : chr  3 possible values : "Acc","Gyro","-"
-jerk          : chr  2 possible values : "Jerk","-"
-mag           : chr  2 possible values : "Mag","-"
-direction     : chr  4 possible values : "X","Y","Z"
-stat          : chr  2 possible values : "Mean","Std"
-value         : (num) average of measurement value (Mean/Std) for each fatures
+subject       : int  value: 1 to 30 <br>
+activity_label: chr  6 possible values : "LAYING","SITTING", "STANDING","WALKING","WALKING_DOWNSTAIRS","WALKING_UPSTAIRS" <br>
+dom           : chr  3 possible values : "Time","Freq","-" <br>
+body_gravity  : chr  3 possible values : "Body","Gravity","-" <br>
+acc_gyro      : chr  3 possible values : "Acc","Gyro","-" <br>
+jerk          : chr  2 possible values : "Jerk","-" <br>
+mag           : chr  2 possible values : "Mag","-" <br>
+direction     : chr  4 possible values : "X","Y","Z" <br>
+stat          : chr  2 possible values : "Mean","Std" <br>
+value         : (num) average of measurement value (Mean/Std) for each fatures <br>
 
 
 
