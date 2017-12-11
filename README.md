@@ -59,4 +59,3 @@ to your working directory
 ### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 - Use aggregate with function mean to get the average value of each variable for each activity and each subject.
 
-write.table(w4tidyave,file="tidy_average.txt",row.names=FALSE)
