@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Course Project
 
-This Readme will explains the analysis files (run_analysis) clear and understandable. 
+This Readme file explains how to run the analysis files (run_analysis.R) from your working directory for getting the tidy data as instructed by Getting and Cleaning Data Course Project.
 
 ## Data and Files
 
