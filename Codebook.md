@@ -41,8 +41,8 @@ The resulting data.frame is saved in tidy_average.txt file
 ## Description of the variables in  tidy_average.txt
 
 - subject       : int  value: 1 to 30 <br>
-- activity_label: chr  6 possible values : "LAYING","SITTING", "STANDING","WALKING","WALKING_DOWNSTAIRS","WALKING_UPSTAIRS" <br>
-- dom           : chr  3 possible values : "Time","Freq","-" <br>
+- activity_label: chr  6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS" <br>
+- dom           : chr  3 possible values : "Time", "Freq","-" <br>
 - body_gravity  : chr  3 possible values : "Body","Gravity","-" <br>
 - acc_gyro      : chr  3 possible values : "Acc","Gyro","-" <br>
 - jerk          : chr  2 possible values : "Jerk","-" <br>
