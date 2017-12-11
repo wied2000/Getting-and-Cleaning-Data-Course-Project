@@ -1,7 +1,7 @@
 
 ---
 ## Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone
-by WM kartika, 11 December 2017
+by WM Kartika, 11 December 2017
 
 ---
 
