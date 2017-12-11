@@ -29,7 +29,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 
 ### Cleaning of the data
-The process for getting the tidy data is as followw. Details is explained in README.md
+
+The process for getting the tidy data is as followw. Details is explained in <a href="https://github.com/wied2000/Getting-and-Cleaning-Data-Course-Project/blob/master/README.md>"README.md</a>
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 3. Uses descriptive activity names to name the activities in the data set
