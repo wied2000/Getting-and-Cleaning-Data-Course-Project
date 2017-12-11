@@ -9,22 +9,24 @@ This Readme file explains how to run the analysis files (run\_analysis.R) from y
 Data and Files
 --------------
 
-To be able to run the analysis file you need to: 1. Download original samsung data from
+To be able to run the analysis file you need to: 
+
+1. Download original samsung data from
 
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
-to your working directory
+   to your working directory
 
-1.  Unzip getdata%2Fprojectfiles%2FUCI HAR Dataset
+2.  Unzip getdata%2Fprojectfiles%2FUCI HAR Dataset
 
-2.  Download run\_analysis.R from this repository to your working directory
+3.  Download run\_analysis.R from this repository to your working directory
 
 Running run\_analysis.R
 -----------------------
 
 ### 1. Merges the training and the test sets to create one data set.
 
-1.  Construct testdata containing
+A.  Construct test data
 
 -   Load Measurement data(X file)
 
@@ -50,7 +52,7 @@ y_test <- read.table("UCI HAR Dataset/test/y_test.txt", quote="\"", comment.char
 test <- cbind(X_test,subject_test,y_test)
 ```
 
-1.  Construct training data containing
+B.  Construct training data
 
 -   Load Measurement data(X file)
 
@@ -76,7 +78,7 @@ y_train <- read.table("UCI HAR Dataset/train/y_train.txt", quote="\"", comment.c
 train <- cbind(X_train,subject_train,y_train)
 ```
 
-1.  Merge taining data and test data
+C.  Merge taining data and test data
 
 -   Create complete data set (training and test) with R command rbind
 
@@ -127,14 +129,12 @@ w4data$activity_label <- activity_labels$V2[w4data$activity]
 ### 4. Appropriately labels the data set with descriptive variable names.
 
 -   convert all features column into ONE column (features) that will be split later
-
 ``` r
 library(tidyr)
 w4datares <- gather(w4data,features,value,-subject,-activity,-activity_label )
 ```
 
 -   create new column for variable dom
-
 ``` r
 w4datares$dom <- rep("-",nrow(w4datares))
 w4datares$dom[grepl("^t",w4datares$features)]<-"Time"
@@ -142,7 +142,6 @@ w4datares$dom[grepl("^f",w4datares$features)]<-"Freq"
 ```
 
 -   create new column for variable body\_gravity
-
 ``` r
 w4datares$body_gravity <- rep("-",nrow(w4datares))
 w4datares$body_gravity[grepl("Body",w4datares$features)]<-"Body"
@@ -150,7 +149,6 @@ w4datares$body_gravity[grepl("Gravity",w4datares$features)]<-"Gravity"
 ```
 
 -   create new column for variable acc\_gyro
-
 ``` r
 w4datares$acc_gyro <- rep("-",nrow(w4datares))
 w4datares$acc_gyro[grepl("Gyro",w4datares$features)]<-"Gyro"
@@ -158,21 +156,18 @@ w4datares$acc_gyro[grepl("Acc",w4datares$features)]<-"Acc"
 ```
 
 -   create new column for variable jerk
-
 ``` r
 w4datares$jerk <- rep("-",nrow(w4datares))
 w4datares$jerk[grepl("Jerk",w4datares$features)]<-"Jerk"
 ```
 
 -   create new column for variable mag
-
 ``` r
 w4datares$mag <- rep("-",nrow(w4datares))
 w4datares$mag[grepl("Mag",w4datares$features)]<-"Mag"
 ```
 
 -   create new column for variable direction
-
 ``` r
 w4datares$direction <- rep("-",nrow(w4datares))
 w4datares$direction[grepl("X",w4datares$features)]<-"X"
@@ -181,7 +176,6 @@ w4datares$direction[grepl("Z",w4datares$features)]<-"Z"
 ```
 
 -   create new column for variable stat
-
 ``` r
 w4datares$stat <- rep("-",nrow(w4datares))
 w4datares$stat[grepl("mean",w4datares$features)]<-"Mean"
@@ -189,7 +183,6 @@ w4datares$stat[grepl("std",w4datares$features)]<-"Std"
 ```
 
 -   create tidy data
-
 ``` r
 w4tidy <- w4datares
 head(w4tidy)
