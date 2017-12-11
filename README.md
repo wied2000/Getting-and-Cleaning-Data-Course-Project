@@ -47,13 +47,13 @@ to your working directory
 ### 4. Appropriately labels the data set with descriptive variable names.
 
 - convert all features column into a column (features) that will be split later
-- create new column for dom
-- create new column for type body_gravity
-- create new column for type acc_gyro
-- create new column for type jerk
-- create new column for type Mag
-- create new column for type dir
-- create new column for type stat
+- create new column for variable dom
+- create new column for variable body_gravity
+- create new column for variable acc_gyro
+- create new column for variable jerk
+- create new column for variable Mag
+- create new column for variable dir
+- create new column for variable stat
 - create tidy data
 
 ### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
