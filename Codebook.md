@@ -1,8 +1,7 @@
 
 ---
-## "Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone"
-### "WM kartika"
-### "11 December 2017"
+## Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone
+by WM kartika, 11 December 2017
 
 ---
 
