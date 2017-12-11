@@ -51,7 +51,7 @@ to your working directory
 - create new column for variable body_gravity
 - create new column for variable acc_gyro
 - create new column for variable jerk
-- create new column for variable Mag
+- create new column for variable mag
 - create new column for variable dir
 - create new column for variable stat
 
