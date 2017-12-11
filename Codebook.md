@@ -40,25 +40,25 @@ The resulting data.frame is saved in tidy_average.txt file
 
 ## Description of the variables in  tidy_average.txt
 
-- subject  <br>     
+- subject      
 class: int,  value: 1 to 30 <br>
 - activity_label<br>
 class: chr,  6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS" <br>
-- dom     <br>      
+- dom       
 class: chr,  3 possible values : "Time", "Freq","-" <br>
-- body_gravity<br>
+- body_gravity  
 class: chr,  3 possible values : "Body","Gravity","-" <br>
-- acc_gyro<br>
+- acc_gyro  
 class: chr,  3 possible values : "Acc","Gyro","-" <br>
-- jerk<br>
+- jerk  
 class: chr,  2 possible values : "Jerk","-" <br>
-- mag<br>
+- mag  
 class: chr,  2 possible values : "Mag","-" <br>
-- direction<br>
+- direction  
 class: chr,  4 possible values : "X","Y","Z" <br>
-- stat<br>
+- stat  
 class: chr,  2 possible values : "Mean","Std" <br>
-- value<br>
+- value  
 class: num,  average of measurement value (Mean/Std) for each fatures <br>
 
 
