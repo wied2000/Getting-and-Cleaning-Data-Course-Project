@@ -40,16 +40,16 @@ The resulting data.frame is saved in tidy_average.txt file
 
 ## Description of the variables in  tidy_average.txt
 
-- subject       : int  value: 1 to 30 <br>
-- activity_label: chr  6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS" <br>
-- dom           : chr  3 possible values : "Time", "Freq","-" <br>
-- body_gravity  : chr  3 possible values : "Body","Gravity","-" <br>
-- acc_gyro      : chr  3 possible values : "Acc","Gyro","-" <br>
-- jerk          : chr  2 possible values : "Jerk","-" <br>
-- mag           : chr  2 possible values : "Mag","-" <br>
-- direction     : chr  4 possible values : "X","Y","Z" <br>
-- stat          : chr  2 possible values : "Mean","Std" <br>
-- value         : (num) average of measurement value (Mean/Std) for each fatures <br>
+- subject       : int,  value: 1 to 30 <br>
+- activity_label: chr,  6 possible values : "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS" <br>
+- dom           : chr,  3 possible values : "Time", "Freq","-" <br>
+- body_gravity  : chr,  3 possible values : "Body","Gravity","-" <br>
+- acc_gyro      : chr,  3 possible values : "Acc","Gyro","-" <br>
+- jerk          : chr,  2 possible values : "Jerk","-" <br>
+- mag           : chr,  2 possible values : "Mag","-" <br>
+- direction     : chr,  4 possible values : "X","Y","Z" <br>
+- stat          : chr,  2 possible values : "Mean","Std" <br>
+- value         : num,  average of measurement value (Mean/Std) for each fatures <br>
 
 
 
